@@ -1,23 +1,30 @@
 package vendaveiculo;
 
+import vendaveiculo.TransporBuilder;
+
 public abstract class Veiculo {
 
     protected int numchassi, ano, quilometragem, peso, status;//1 vendido, 0 a venda.
     protected String marca, modelo, tipocombustivel;
     protected double preco;
+    private TransporBuilder transporBuilder;
 
-    public Veiculo(int numchassi, int ano, int quilometragem, int peso,
-            String marca, String modelo, String tipocombustivel, int status, double preco) {
-        this.numchassi = numchassi;
-        this.ano = ano;
-        this.quilometragem = quilometragem;
-        this.peso = peso;
-        this.marca = marca;
-        this.modelo = modelo;
-        this.tipocombustivel = tipocombustivel;
-        this.status = status;
-        this.preco = preco;
+    public Veiculo() {
+
+        this.numchassi = 0;
+        this.ano = 0;
+        this.quilometragem = 0;
+        this.peso = 0;
+        this.marca = null;
+        this.modelo = null;
+        this.tipocombustivel = null;
+        this.status = 0;
+        this.preco = 0;
     }
+
+    // public Veiculo(TransporBuilder transporBuilder){
+        
+    // }
 
     public void veiculoVendido() {
         if (status == 1) {

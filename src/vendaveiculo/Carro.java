@@ -11,32 +11,8 @@ public class Carro extends Veiculo {
     }
     private Tipos enumtipocarro;
 
-    public Carro(int numchassi, int ano, int quilometragem, int peso, String marca,
-            String modelo, String tipocombustivel, int status, int potencia,
-            int numcilindros, int numocupantes, String tipoCarro, double comp, double larg, double altu, double preco) {
-        super(numchassi, ano, quilometragem, peso, marca, modelo, tipocombustivel, status, preco);
-        this.potencia = potencia;
-        this.numcilindros = numcilindros;
-        this.numocupantes = numocupantes;
-        this.tipoCarro = tipoCarro;
-        this.altu = altu;
-        this.comp = comp;
-        this.larg = larg;
-        if (tipoCarro.equals("SEDAN")) {
-            enumtipocarro = Tipos.SEDAN;
-        }
-        if (tipoCarro.equals("UTILITARIO")) {
-            enumtipocarro = Tipos.UTILITARIO;
-        }
-        if (tipoCarro.equals("PICKUP")) {
-            enumtipocarro = Tipos.PICKUP;
-        }
-        if (tipoCarro.equals("HATCH")) {
-            enumtipocarro = Tipos.HATCH;
-        }
-        if (tipoCarro.equals("ESPORTIVO")) {
-            enumtipocarro = Tipos.ESPORTIVO;
-        }
+    public Carro() {
+ 
 
     }
 

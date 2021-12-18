@@ -10,25 +10,7 @@ public class Motocicleta extends Veiculo {
     }
     TipoMotocicleta enummotocicleta;
 
-    public Motocicleta(int numchassi, int ano, int quilometragem, int peso,
-            String marca, String modelo, String tipocombustivel, int status,
-            int cilindradas, String motocicleta, double preco) {
-        super(numchassi, ano, quilometragem, peso, marca, modelo, tipocombustivel, status, preco);
-        this.cilindradas = cilindradas;
-        this.motocicleta = motocicleta;
-        if(motocicleta.equals("TRAIL")){
-            enummotocicleta = TipoMotocicleta.TRAIL;
-        }
-        if(motocicleta.equals("STREET")){
-         enummotocicleta = TipoMotocicleta.STREET;   
-        }
-        if(motocicleta.equals("ESPORTIVA")){
-         enummotocicleta = TipoMotocicleta.ESPORTIVA;   
-        }
-        if(motocicleta.equals("CUSTOM")){
-         enummotocicleta = TipoMotocicleta.CUSTOM;   
-        }
-        
+    public Motocicleta(){
     }
     
     public String getTipoMoto(){
