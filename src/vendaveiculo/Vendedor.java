@@ -93,4 +93,5 @@ public abstract class Vendedor {
     
     public abstract void getTudo();
 
+    public abstract void update();
 }
